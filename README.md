@@ -2,6 +2,8 @@
 
 This project demonstrates how to build a bot on [Poe](https://poe.com) that streams an ASCII art video with Django.
 
+> Blog post: [Build a Poe Bot That Plays Bad Apple Using Django](https://leaves.one/2023/10/11/poe-bot-play-ascii-video-using-django/)
+
 ## Demo
 
 ![Bad Apple on Poe](docs/BadApple_on_Poe.gif)
@@ -49,6 +51,6 @@ Fill in the `Server URL` field. The API endpoint is `/chat/poe`.
 
 ## Resources
 
-- [Poe Bot Docs](https://docs.poe.com/bots)
+- [Poe Developer Docs](https://developer.poe.com/)
 - [Django: Request and response objects](https://docs.djangoproject.com/en/4.2/ref/request-response/)
 - [Server-Sent Events](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events)
