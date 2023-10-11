@@ -1,0 +1,4 @@
+Django~=4.2.6
+python-decouple~=3.8
+opencv-python~=4.8.1.78
+sse-starlette~=0.3.0
