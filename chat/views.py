@@ -56,7 +56,7 @@ def stream(request):
                     ascii_frame += line
 
         # End response
-        yield ServerSentEvent(data="{}", event="replace_response").encode()
+        yield ServerSentEvent(data="{}", event="done").encode()
 
     # Handle request
     request = json.loads(request.body)
