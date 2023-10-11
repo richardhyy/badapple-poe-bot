@@ -2,7 +2,7 @@ import cv2
 import argparse
 
 
-def frame_to_ascii(frame, width=80):
+def frame_to_ascii(frame, width):
     ascii_chars = "@%#*+=-:. "
     frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)  # Convert the frame color to gray scale
     frame = cv2.resize(frame, (width, int(frame.shape[0] / frame.shape[1] * width * 0.6)))  # Resize the frame
@@ -14,7 +14,7 @@ def frame_to_ascii(frame, width=80):
     return ascii_str
 
 
-def convert_video_to_ascii(video_file_path, output_file_path, width=80, skip_frames=1):
+def convert_video_to_ascii(video_file_path, output_file_path, width, skip_frames):
     video = cv2.VideoCapture(video_file_path)
     frame_count = 0
     with open(output_file_path, "w") as f:
